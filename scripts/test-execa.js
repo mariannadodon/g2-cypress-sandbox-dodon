@@ -2,7 +2,7 @@ const execa = require('execa')
 
 execa('echo Hello', {
   shell: true,
-}).then(console.log)
+}).then(console.log);
 
 it ('locators',() =>{
   cy.visit('http://localhost:8080/');
@@ -41,3 +41,5 @@ it ('locators',() =>{
 
   cy.get('//*[@id="navbar"]//*[@href="/commands/spies-stubs-clocks"]');
 })
+
+
